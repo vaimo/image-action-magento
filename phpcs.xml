@@ -1,0 +1,24 @@
+<ruleset name="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+    <!-- A fully annotated list of options is available here: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-Ruleset -->
+    <!-- File extensions to check -->
+    <arg name="extensions" value="php,phtml,graphqls"/>
+    <!--  Strip base directory from file paths in output -->
+    <arg name="basepath" value="."/>
+    <!-- Use colored output -->
+    <arg name="colors"/>
+    <!-- Show progress bar -->
+    <arg value="p"/>
+    <!-- Show sniff message codes in errors -->
+    <arg value="s"/>
+    <!-- Configures overall minimum severity -->
+    <arg name="severity" value="1"/>
+    <!-- Configure minimum severity for errors -->
+    <arg name="error-severity" value="1"/>
+    <!-- Configure minimum severity for warnings -->
+    <arg name="warning-severity" value="1"/>
+
+    <!-- Files to exclude -->
+    <exclude-pattern>*/Test/*</exclude-pattern>
+
+    <rule ref="Vaimo"/>
+</ruleset>

@@ -1,0 +1,22 @@
+{
+  "name": "vaimo/image-action-magento",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Patryk Walus",
+      "email": "patryk.walus@vaimo.com"
+    }
+  ],
+  "require": {
+    "php": "~7.4 | ~8.1 | ~8.2"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.0",
+    "phpmd/phpmd": "2.13.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
